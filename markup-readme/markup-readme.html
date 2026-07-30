@@ -139,9 +139,9 @@
       </p>
       <div>
         Import { createRoot } from "react-dom/client"; function HelloMessage({
-        name }) { return div Hello {name} div; } const root =
+        name }) { return &lt;div&gt; Hello {name} &lt;/div&gt;; } const root =
         createRoot(document.getElementById("container"));
-        root.render(HelloMessage name="Taylor" );
+        root.render(&lt;HelloMessage name="Taylor" /&gt;);
       </div>
       <p>
         This example will render "Hello Taylor" into a container on the page.
