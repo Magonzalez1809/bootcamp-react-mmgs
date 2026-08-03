@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+h1,
+p {
+  background-color: #dde0e3; /* Light gray */
+}
+
+p {
+  padding: 20px 0 20px 10px;
+
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  padding: 50px;
+  border-bottom: 1px solid #5d6063; /*size style color*/
+}
+
+em,
+strong {
+  background-color: #b2d6ff; /* Light blue */
+}
+
+div {
+  color: #fff;
+  background-color: #4a90e2;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+
+  width: 200px;
+
+  margin: 20px auto; /* Vertical  Horizontal */
+  box-sizing: border-box; /* this includes padding and border in the element's total width and height, becase de other form 
+  the padding and border is calculated , result that the size is consistent */
+}
+
+div {
+  /* [Existing Declarations] */
+  width: 200px;
+}
