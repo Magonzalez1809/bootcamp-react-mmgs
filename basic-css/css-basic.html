@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="penguin.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>CSS Basic</h1>
+
+    <div class="css-intro">
+      <h2>Ways to apply styles to our HTML document</h2>
+      <ul>
+        <li>
+          <strong>Inline styles:</strong> apply to specific elements when the
+          style attribute is used
+        </li>
+        <li><strong>Element Selectors:</strong> apply to specific elements</li>
+        <li>
+          <strong>Class:</strong> applies to specific elements that have the
+          class attribute, the css class start with a dot ".miclase", you can
+          give more than one element the same class. and you can give more than
+          one class to an element, for example: class="miclase1 miclase2"
+        </li>
+        <li>
+          <strong>ID:</strong> applies to a specific element that has the id
+          attribute, the css id start with a hash "#miid", please don't give
+          more than one element the same ID, because it will not work properly.
+        </li>
+        <li>
+          <strong>Attribute Selectors:</strong> applies to specific elements
+          that have a specific attribute, for example, input[type="text"] will
+          apply to all input elements with type text.
+        </li>
+      </ul>
+    </div>
+
+    <div class="css-intro">
+      <h2>Basic styles</h2>
+      <ul>
+        <li>
+          <strong>color:</strong>
+          <p class="red-text">to apply color in the font.</p>
+        </li>
+        <li>
+          <strong>font-size:</strong>
+          <p class="font-size">to specify the size of the font</p>
+        </li>
+        <li>
+          <strong>font-family:</strong>
+          <p class="font-family">
+            to specify the type of font, you can use
+            <spam class="google-font-family">google fonts,</spam>
+            you can specify more than one font, for example: font-family: Arial,
+            sans-serif; When one font isn't available, you can tell the browser
+            to "degrade" to another font.
+          </p>
+        </li>
+        <li>
+          <strong>width:</strong>
+          <p class="width-style">to specify the width of the element.</p>
+        </li>
+        <li>
+          <strong
+            >border-color, border-style, and border-width,
+            border-radius:</strong
+          >
+          <p class="thick-green-border">
+            are properties that control the appearance of CSS borders, you can
+            specify the border in pixels, ems, or percentages. You can also
+            specify the border radius to make the corners rounded.
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <div id="padding-margin">
+      <h2>Padding and Margin</h2>
+      All HTML elements are essentially little rectangles, The padding, border,
+      and margin properties control the space that surrounds each HTML element.
+    </div>
+
+    <div class="penguin">
+      <div class="penguin-bottom">
+        <div class="right-hand"></div>
+        <div class="left-hand"></div>
+        <div class="right-feet"></div>
+        <div class="left-feet"></div>
+      </div>
+      <div class="penguin-top">
+        <div class="right-cheek"></div>
+        <div class="left-cheek"></div>
+        <div class="belly"></div>
+        <div class="right-eye">
+          <div class="sparkle"></div>
+        </div>
+        <div class="left-eye">
+          <div class="sparkle"></div>
+        </div>
+        <div class="blush-right"></div>
+        <div class="blush-left"></div>
+        <div class="beak-top"></div>
+        <div class="beak-bottom"></div>
+      </div>
+    </div>
+  </body>
+</html>

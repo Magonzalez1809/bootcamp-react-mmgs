@@ -1,0 +1,63 @@
+/*style for elements*/
+body {
+  background-color: lightyellow;
+  font-family: Arial, sans-serif;
+  margin: 40px;
+}
+
+h2 {
+  color: black;
+  font-size: 24px;
+}
+
+.css-intro {
+  background-color: lightgray;
+  margin: 40px;
+  padding: 20px;
+}
+
+.red-text {
+  color: red;
+}
+
+.font-size {
+  /*size of the font on the words*/
+  font-size: 16px;
+}
+
+.font-family {
+  /*type of the font on the words*/
+  font-family: monospace, sans-serif;
+}
+
+.google-font-family {
+  /*type of the font on the words*/
+  /*you can specify multiple fonts, when the first one is not available the second one will be used*/
+  font-family: Lobster, monospace;
+}
+
+.width-style {
+  width: 100px;
+  background-color: lightblue;
+}
+
+.thick-green-border {
+  border-color: green;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 10px; /*you can specify the radius of the border in pixels, percentage and em*/
+}
+
+#css-id {
+  background-color: lightgreen;
+  font-size: 30px;
+}
+
+#padding-margin {
+  margin: 40px;
+  padding: 20px;
+  border-color: black;
+  border-width: 5px;
+  border-style: solid;
+  background-color: yellow;
+}
