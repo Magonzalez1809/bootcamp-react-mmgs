@@ -1,0 +1,83 @@
+div {
+  margin: 20px;
+  background-color: #f0f0f0; /* Light gray */
+  padding: 10px;
+}
+
+.drop-cap::first-letter {
+  color: blue;
+  float: left;
+  font-size: 2.6em;
+  font-weight: bold;
+  line-height: 1;
+  margin-inline-end: 0.2rem;
+}
+
+.first-line::first-line {
+  color: goldenrod;
+  font-weight: bold;
+}
+
+p {
+  padding: 10px;
+  background-color: #b2d6ff; /* Light blue */
+}
+
+.info::before {
+  content: "ℹ️ ";
+  color: blue;
+}
+
+.info::after {
+  content: " 🚀";
+}
+
+video::backdrop {
+  background-color: red;
+}
+
+video {
+  min-width: 20rem;
+  max-width: 100%;
+}
+
+::marker {
+  color: pink;
+  font-size: 1rem;
+}
+
+summary::marker {
+  content: "\002B" " "; /* Plus symbol with space */
+}
+
+details[open] summary::marker {
+  content: "\2212" " "; /* Minus symbol with space */
+}
+
+.selection::selection {
+  color: pink;
+  background-color: #007bff; /* Bootstrap primary blue */
+}
+
+input::placeholder {
+  color: darkcyan;
+}
+
+/* Presentational styles */
+
+input {
+  padding: 0.5em 1em;
+  border: 1px solid var(--color-stroke);
+}
+
+video::cue {
+  color: yellow;
+}
+
+video::cue(b) {
+  color: red;
+}
+
+video::cue(i) {
+  color: lightpink;
+}

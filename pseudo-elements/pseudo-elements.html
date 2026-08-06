@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pseudo-elements.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>::first-letter</h1>
+      <p class="drop-cap">
+        The drop cap is a first letter of a paragraph, only you can apply to the
+        first letter of a paragraph the color, background image, border-color,
+        float, font-size, font-weight, tetx-decoration, word-spacing.
+      </p>
+    </div>
+    <div>
+      <h1>::before and ::after</h1>
+      <p class="info">
+        you can use pseudo-elements ::before and ::after to add content before
+        or after an element, only you can used them in elemnts that acept
+        secundary content, it not work in &lt;img /&gt;, &lt;video&gt; y
+        &lt;input&gt;
+      </p>
+    </div>
+    <div>
+      <h1>::first-line</h1>
+      <p class="first-line">
+        The first line of this paragraph is goldenrod<br />
+        only if you element is a block element, the first line of a block
+        element can be styled with the ::first-line pseudo-element. and olny the
+        following properties can be used: color, font, background, word-spacing,
+        letter-spacing, text-decoration, vertical-align and text-transform.
+      </p>
+    </div>
+    <div>
+      <h1>::backdrop</h1>
+      <p>
+        If you have a elemente when is present in full screen as a &lt;video&gt;
+        or a &lt;dialog&gt; element, you can use the ::backdrop pseudo-element
+        to style the background.
+      </p>
+      <video
+        src="https://storage.googleapis.com/web-dev-assets/hands-on-portals/portals_vp9.webm"
+        controls
+      ></video>
+    </div>
+    <div>
+      <h1>::marker</h1>
+      <p>
+        The ::marker pseudo-element is used to style the marker box of a list
+        item, only you can use the following properties: color, content,
+        white-space, font properties and property animation and transition.
+      </p>
+      <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+      </ul>
+
+      <details>
+        <summary>Open for some more content</summary>
+        <p>
+          Maecenas sed diam eget risus varius blandit sit amet non magna. Sed
+          posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque
+          ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget
+          risus varius blandit sit amet non magna. Morbi leo risus, porta ac
+          consectetur ac, vestibulum at eros. Donec sed odio dui. Praesent
+          commodo cursus magna, vel scelerisque nisl consectetur et. Cum sociis
+          natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+          mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+          venenatis vestibulum. Cras justo odio, dapibus ac facilisis in,
+          egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id
+          elit.
+        </p>
+      </details>
+    </div>
+    <div>
+      <h1>::selection</h1>
+      <p class="selection">
+        the peseudo-element ::selection is used to style the portion of an
+        element that is selected by a user. You can use the following
+        properties: color, background, text-decoration, text-shadow.
+      </p>
+    </div>
+    <div>
+      <h1>::placeholder</h1>
+      <p>
+        the peseudo-element ::placeholder is used to style the placeholder text
+        of an input element. You can use the following properties: color,
+        background, text-decoration, text-shadow.
+      </p>
+      <label for="email">Email address</label>
+      <input type="email" placeholder="E.G name@example.com" id="email" />
+    </div>
+    <div>
+      <h1>::cue</h1>
+      <p>
+        the peseudo-element ::cue is used to style the cue text of a media
+        element. You can use the following properties: color, background,
+        text-decoration, text-shadow, and font properties.
+      </p>
+      <video controls>
+        <track
+          src="https://storage.googleapis.com/web-dev-assets/hands-on-portals/portals_vp9.vtt"
+          kind="subtitles"
+          srclang="en"
+          label="English"
+          default
+        />
+      </video>
+    </div>
+  </body>
+</html>
