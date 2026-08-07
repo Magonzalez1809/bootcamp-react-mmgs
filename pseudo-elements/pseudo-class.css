@@ -1,0 +1,135 @@
+div {
+  margin: 20px;
+  background-color: #f0f0f0; /* Light gray */
+  padding: 10px;
+}
+
+.info {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-block-start: 0.5em;
+}
+
+.hover:hover {
+  background: black;
+  color: white;
+  text-decoration: none;
+}
+
+.button:active {
+  transform: scale(0.99);
+  box-shadow: none;
+}
+
+.focus:focus {
+  outline: 2px dashed blue;
+  outline-offset: 2px;
+  background-color: black;
+}
+
+.focus-visible:focus-visible {
+  outline: 2px dashed blue;
+  outline-offset: 2px;
+  background-color: black;
+}
+
+#recipe:target,
+#recipe:target ~ * {
+  background: lightgoldenrodyellow;
+}
+
+.link:link {
+  color: red;
+}
+
+.visit:visited {
+  color: green;
+}
+
+button:disabled {
+  background: grey;
+  border-color: grey;
+  cursor: not-allowed;
+}
+
+button:enabled {
+  border: 5px solid gold;
+}
+
+:checked {
+  box-shadow: 0px 0px 5px 2px green;
+}
+
+input {
+  min-width: 320px;
+  padding: 0.5rem 1rem;
+  line-height: 1;
+  font: inherit;
+  border-radius: 0.25rem;
+}
+
+input:invalid {
+  border-color: red;
+  background-color: #ffe6e6; /* Light red */
+}
+
+input:valid {
+  border-color: green;
+}
+
+input:in-range {
+  background: green;
+  color: white;
+}
+
+article > p:first-child {
+  background: lightskyblue;
+  font-weight: bold;
+}
+
+article > p:last-child {
+  background: lightyellow;
+  font-weight: bold;
+}
+
+li:only-child {
+  background: lightyellow;
+}
+
+.my-parent div:first-of-type {
+  color: red;
+}
+
+li:nth-child(2) {
+  background: yellow;
+}
+li:nth-last-child(2) {
+  background: orange;
+}
+
+strong:only-of-type {
+  background: yellow;
+}
+
+.post :empty::after {
+  display: block;
+  content: "This element is empty";
+  color: red;
+}
+
+.elementsparents :is(p, h2, h1) {
+  background: green;
+}
+
+.exclude img:not([alt]) {
+  background: red;
+  border: 5px solid black;
+}
+
+form:has(input:valid) label {
+  font-weight: bold;
+}
+
+form:has(input:valid) p::after {
+  content: " ..correo verificado ✅";
+}

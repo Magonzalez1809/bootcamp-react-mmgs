@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pseudo-class.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>Estado Interactivos</h1>
+
+      <h2>:hover</h2>
+      <p>
+        If you put the mouse pointer over the element or section you will use
+        the hover pseudo-class, for example, if you want to change the color of
+        a link when the user hovers over it, you can use the :hover
+        pseudo-class.
+      </p>
+      <p>This is a link: <a class="hover" href="#">hover over me</a></p>
+      <h2>:active</h2>
+      <p>
+        The :active pseudo-class is used to style an element when it is being
+        activated by the user, for example, when a button is being clicked.
+      </p>
+      <div>
+        <button class="button">Click and hold to see the active state</button>
+      </div>
+      <h2>:focus, :focus-within y :focus-visible</h2>
+      <p>
+        The :focus pseudo-class is used to style an element when it has focus,
+        for example, when a user clicks on an input field or a button. The
+        :focus-within pseudo-class is used to style an element when any of its
+        descendants have focus. The :focus-visible pseudo-class is used to style
+        an element when it has focus and the user is using a keyboard or other
+        non-pointer input device.
+      </p>
+      <div>
+        <button class="focus">Use your mouse or keyboard</button>
+        <button class="focus-visible">Only use keyboard</button>
+      </div>
+      <h2>:target</h2>
+      <p>
+        The :target pseudo-class is used to style an element that is the target
+        of the current URL fragment identifier. For example, if you have a link
+        that points to a specific section of a page, you can use the :target
+        pseudo-class to style that section when it is the target of the URL. an
+        element when it has focus and the user is using a keyboard or other
+        non-pointer input device.
+      </p>
+      <article class="flow">
+        <h3>My pizza dough recipe</h3>
+        <p>
+          <a href="#recipe" class="button">Skip to the recipe</a>
+        </p>
+        <h3 id="recipe">Recipe</h3>
+        <p>
+          This is the recipe for my pizza dough. It is a simple recipe that
+          yields a delicious pizza crust.
+        </p>
+      </article>
+    </div>
+    <div>
+      <h1>Estados históricos</h1>
+
+      <h2>:link</h2>
+      <p>
+        Is aplied to links that have not yet been visited. For example, if you
+        want to change the color of a link that has not been visited, you can
+        use the :link pseudo-class.
+      </p>
+      <p>This is a link: <a class="link" href="#">click me</a></p>
+      <h2>:visited</h2>
+      <p>
+        The :visited pseudo-class is used to style links that have already been
+        visited. For example, if you want to change the color of a link that has
+        been visited, you can use the :visited pseudo-class.
+      </p>
+      <p>
+        This is a link: <a class="visit" href="#recipe">click me visited</a>
+      </p>
+      <p>
+        Is recommended apply the rule LVHA (link, visited, hover, active) to
+        avoid specificity issues. The order of the pseudo-classes is important
+        because it determines which styles will be applied when multiple
+        pseudo-classes match the same element.
+      </p>
+    </div>
+    <div>
+      <h1>Estados de formularios</h1>
+
+      <h2>:disabled y :enabled</h2>
+      <p>
+        The :disabled pseudo-class is used to style form elements that are
+        disabled, while the :enabled pseudo-class is used to style form elements
+        that are enabled. For example, if you want to change the color of a
+        button when it is disabled, you can use the :disabled pseudo-class.
+      </p>
+      <div>
+        <button disabled>I am a button with a disabled state</button>
+        <button>I am an enabled button</button>
+      </div>
+      <h2>:checked y :indeterminate</h2>
+      <p>
+        The :checked pseudo-class is used to style checkboxes and radio buttons
+        that are checked. The :indeterminate pseudo-class is used to style
+        checkboxes and radio buttons that are in an indeterminate state.
+      </p>
+      <label>
+        <input type="checkbox" />
+        Check me
+      </label>
+      <label>
+        <input type="checkbox" />
+        Check me too
+      </label>
+      <h2>:placeholder-shown</h2>
+      <p>
+        The :placeholder-shown pseudo-class is used to style input fields that
+        are showing placeholder text. For example, if you want to change the
+        color of an input field when it is showing placeholder text, you can use
+        the :placeholder-shown pseudo-class.
+      </p>
+    </div>
+    <div>
+      <h1>Estados de validación</h1>
+      <h2>:valid, :invalid</h2>
+      <p>
+        The :valid and :invalid pseudo-classes are used to style input fields
+        based on their validation state. For example, if you want to change the
+        color of an input field when it is valid or invalid, you can use these
+        pseudo-classes.
+      </p>
+
+      <form>
+        <label for="email">Email address</label>
+        <input
+          type="email"
+          id="email"
+          required
+          placeholder="A valid email, like name@domain.com"
+          aria-describedby="emailinfo"
+        />
+        <p class="info" id="emailinfo">
+          Add a valid email address to see the state change
+        </p>
+      </form>
+      <h2>:in-range</h2>
+      <p>
+        The :in-range pseudo-class is used to style input fields that have a
+        value within a specified range. For example, if you want to change the
+        color of an input field when its value is within a certain range, you
+        can use the :in-range pseudo-class.
+      </p>
+      <form>
+        <label for="number">Change the number</label>
+        <input
+          type="number"
+          id="number"
+          aria-describedby="numberinfo"
+          min="1"
+          max="10"
+          value="15"
+        />
+        <p class="info" id="numberinfo">
+          Change the number to be between 1 and 10 to see the in-range state
+        </p>
+      </form>
+    </div>
+    <div>
+      <h1>Selecciona elementos por su índice, orden y ocurrencia</h1>
+      <h2>:first-child, :last-child</h2>
+      <p>
+        The :first-child and :last-child pseudo-classes are used to style the
+        first and last child elements of a parent element. For example, if you
+        want to change the style of the first or last list item in a list, you
+        can use these pseudo-classes.
+      </p>
+
+      <article>
+        <p>I am the first paragraph.</p>
+        <p>
+          Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus
+          varius blandit sit amet non magna. Sed posuere consectetur est at
+          lobortis. Vestibulum id ligula porta felis euismod semper.
+        </p>
+
+        <p>
+          Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam
+          quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          Nulla vitae elit libero, a pharetra augue.
+        </p>
+        <p>I am the last paragraph.</p>
+      </article>
+      <h2>:only-child</h2>
+      <p>
+        The :only-child pseudo-class is used to style an element that is the
+        only child of its parent. For example, if you want to change the style
+        of a paragraph that is the only child of a div, you can use the
+        :only-child pseudo-class.
+      </p>
+      <p>One item in a list</p>
+      <ul>
+        <li>I am the only list item</li>
+      </ul>
+      <p>Multiple items in a list</p>
+      <ul>
+        <li>I am one of many list items</li>
+        <li>Nullam id dolor id nibh ultricies vehicula ut id elit.</li>
+        <li>Cras mattis consectetur purus sit amet fermentum.</li>
+      </ul>
+      <h2>:first-of-type y :last-of-type</h2>
+      <p>
+        The :first-of-type and :last-of-type pseudo-classes are used to style
+        the first and last elements of a specific type within a parent element.
+        For example, if you want to change the style of the first or last
+        paragraph in a div, you can use these pseudo-classes.
+      </p>
+      <div class="my-parent">
+        <p>A paragraph</p>
+        <div>A div</div>
+        <div>Another div</div>
+      </div>
+      <h2>:nth-child y :nth-of-type, :nth-last-child y :nth-last-of-type</h2>
+      <p>
+        The :nth-child and :nth-of-type pseudo-classes are used to style
+        elements based on their position within a parent element. For example,
+        if you want to change the style of every second paragraph in a div, you
+        can use the :nth-child pseudo-class. :nth-child(even) will select all
+        even-numbered children, while :nth-child(odd) will select all
+        odd-numbered children. The :nth-last-child and :nth-last-of-type
+        pseudo-classes work similarly, but they count from the end of the parent
+        element instead of the beginning.
+      </p>
+      <article>
+        <ul>
+          <li>I am one of many list items</li>
+          <li>I have a yellow highlight because I am the second child</li>
+          <li>
+            I have an orange highlight because I am the second child from the
+            end
+          </li>
+          <li>Cras mattis consectetur purus sit amet fermentum.</li>
+        </ul>
+      </article>
+      <h2>:only-of-type</h2>
+      <p>
+        The :only-of-type pseudo-class is used to style an element that is the
+        only element of its type within a parent element. For example, if you
+        want to change the style of a paragraph that is the only paragraph in a
+        div, you can use the :only-of-type pseudo-class.
+      </p>
+
+      <p>
+        The only <strong>bold element</strong> in this paragraph gets a
+        highlight style. Cras justo odio, dapibus ac facilisis in, egestas eget
+        quam. Nullam id dolor id nibh ultricies vehicula ut id elit.
+      </p>
+    </div>
+    <div>
+      <h1>como encontrar elementos vacios</h1>
+      <h2>:empty</h2>
+      <p>
+        The :empty pseudo-class is used to style elements that have no children.
+        For example, if you want to change the style of a div that has no
+        content, you can use the :empty pseudo-class.
+      </p>
+      <main class="post">
+        <p>Donec ullamcorper nulla non metus auctor fringilla.</p>
+        <p></p>
+        <p>Curabitur blandit tempus porttitor.</p>
+      </main>
+    </div>
+    <div>
+      <h1>Cómo buscar y excluir varios elementos</h1>
+      <h2>:is()</h2>
+      <p>
+        The :is() pseudo-class is used to style elements that match any of the
+        specified selectors. if you want to apply a style to the elments p h1
+        and h2 of a div you can use the :is() pseudo-class.
+      </p>
+      <div class="elementsparents">
+        <p>I am a paragraph</p>
+        <h1>I am a heading 1</h1>
+        <h2>I am a heading 2</h2>
+        <div>I am a div</div>
+      </div>
+      <h2>:not()</h2>
+      <p>
+        The :not() pseudo-class is used to style elements that do not match a
+        specific selector. For example, if you want to apply a style to all
+        elements except those that have the attribute class you can use the
+        :not() pseudo-class.
+      </p>
+
+      <div class="exclude">
+        <img src="./images/image.png" alt="carita feliz" />
+        <img src="./images/image.png" />
+        <img src="./images/image.png" />
+      </div>
+      <h2>:has</h2>
+      <p>
+        The :has() pseudo-class is used to style elements that have a specific
+        child element. For example, if you want to apply a style to all divs
+        that have a paragraph as a child element you can use the :has()
+        pseudo-class.
+      </p>
+      <form>
+        <label for="email">Email address</label>
+        <input
+          type="email"
+          id="email"
+          required
+          placeholder="A valid email, like name@domain.com"
+          aria-describedby="emailinfo"
+        />
+        <p class="info" id="emailinfo">
+          Add a valid email address to see the state change
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
