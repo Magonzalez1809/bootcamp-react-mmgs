@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="newsletter.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>Pseudo-class and Pseudo-elements</h1>
+      <p>
+        Pseudo-classes and pseudo-elements are both used in CSS to style HTML
+        elements, but they have different purposes. A pseudo-class is used to
+        select an element based on its state or condition, such as when the
+        mouse is over it, when it is focused, or when an input is invalid.
+        Examples of pseudo-classes are :hover, :focus, and :invalid. On the
+        other hand, a pseudo-element is used to style or create a specific part
+        of an element, such as the first letter, the first line, or content
+        before or after an element. Examples of pseudo-elements are ::before,
+        ::after, and ::first-letter. In short, pseudo-classes describe the state
+        of an element, while pseudo-elements style a specific part of an
+        element.
+      </p>
+    </div>
+    <h1>Subscribe to our newsletter</h1>
+    <form action="#" method="POST" onsubmit="alert('¡Suscripcion exitosa!')">
+      <div>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="full name"
+        />
+        <span> * El nombre es requerido, por favor introdusca su nombre.</span>
+      </div>
+      <div>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="email"
+        />
+        <span>
+          * Correo no valido, Por favor intrudusca una direccion de correo
+          valida.</span
+        >
+      </div>
+      <div>
+        <input type="tel" id="phone" name="phone" placeholder="phone number" />
+      </div>
+      <div>
+        <label for="terms">
+          <input type="checkbox" id="terms" name="terms" required />
+          I accept the terms and conditions
+          <a href="#textterms">Read terms and conditions</a>
+          <span class="check-terms">
+            * Acepta los terminos y condiciones para porder continuar</span
+          >
+        </label>
+      </div>
+
+      <button type="submit">Subscribe</button>
+    </form>
+
+    <details>
+      <summary>Terminos y Condiciones</summary>
+      <ul id="textterms">
+        <li>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </li>
+        <li>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </li>
+        <li>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </li>
+        <li>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </li>
+        <li>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </li>
+      </ul>
+    </details>
+  </body>
+</html>

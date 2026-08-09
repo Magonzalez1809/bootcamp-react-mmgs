@@ -1,0 +1,107 @@
+body {
+  margin: 5rem 25rem 0 25rem;
+  width: 48rem;
+  background-color: #f0f0f0; /* Light gray */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  text-align: justify;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="tel"] {
+  width: 100%;
+}
+
+span {
+  font-size: 0.8rem;
+  color: red;
+  display: none;
+}
+
+button {
+  padding: 0.5rem;
+}
+
+input:valid {
+  background-color: #e8f0fe;
+}
+
+input:invalid {
+  border-color: rgb(205, 122, 122);
+  background-color: #ffe6e6;
+}
+
+input:focus:invalid ~ span {
+  display: block;
+}
+
+input {
+  margin-top: 1rem;
+  padding: 0.9rem;
+}
+
+button {
+  background-color: #0747a6;
+  color: #f0f0f0;
+  border-radius: 0.2rem;
+  width: 10rem;
+  margin: 1rem 0 1rem 0;
+}
+
+ul::first-line {
+  color: #0747a6;
+}
+
+::marker {
+  content: "° ";
+}
+
+li:nth-child(odd)::marker {
+  color: red;
+}
+
+#textterms:target,
+#textterms:target ~ * {
+  background: #deebff;
+}
+
+details,
+summary,
+ul,
+li {
+  width: 100%;
+  max-width: 120ch;
+  text-align: center;
+}
+
+summary::marker {
+  content: "\002B" " "; /* Plus symbol with space */
+}
+
+details[open] summary::marker {
+  content: "\2212" " "; /* Minus symbol with space */
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  background-color: #deebff;
+  text-decoration: underline;
+}
+
+a:active {
+  background-color: aquamarine;
+}
