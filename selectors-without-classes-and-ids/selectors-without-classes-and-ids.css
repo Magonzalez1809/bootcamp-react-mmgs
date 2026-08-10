@@ -1,0 +1,120 @@
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  position: relative;
+  width: 100vw;
+}
+
+header h1 {
+  position: absolute;
+  left: 68px;
+  bottom: 68px;
+  color: white;
+  font-size: 52px;
+  width: 65%;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  margin: 10px 0 0 520px;
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: normal;
+  padding: 30px 0 30px 0;
+}
+
+h3 {
+  padding: 30px 0 30px 0;
+}
+
+ul li {
+  inset-inline: 16px;
+  line-height: 32px;
+}
+
+ul {
+  margin-bottom: 30px;
+}
+
+main > p:first-of-type {
+  padding: 30px 0 30px 0;
+  line-height: 32px;
+}
+
+main > p:first-of-type::first-letter {
+  font-size: 110px;
+  font-weight: 400;
+  float: left;
+  margin: 25px 19px 0 0;
+}
+
+div {
+  padding: 30px 0 30px 0;
+}
+
+div span:first-child {
+  font-size: 16px;
+}
+
+span strong {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 120px;
+  font-weight: 300;
+  display: block;
+}
+
+section {
+  display: flex;
+  gap: 20px;
+}
+section > div {
+  flex: 1 1 0;
+}
+
+p + div {
+  background-color: rgb(196, 196, 196);
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+article > div {
+  flex: 1 1 calc(33.333% - 20px);
+}
+
+article img {
+  width: 100%;
+}
+
+h4 {
+  font-family: EYInterstate;
+  font-weight: 300;
+  font-size: 40px;
+}
+
+article a {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 300;
+  color: black;
+}
+
+article a:hover:not(img) {
+  text-decoration: underline;
+}
