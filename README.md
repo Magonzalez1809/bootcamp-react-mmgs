@@ -1,1 +1,1 @@
-# bootcamp-react-mmgs
+# bootcamp-react-mmg
