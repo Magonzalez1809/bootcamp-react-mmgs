@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>Sizing Units</h1>
+      <p>
+        The web is a responsive medium, but sometimes you want to control its
+        dimensions to improve the overall interface quality
+      </p>
+      <section>
+        <article class="numbers">
+          <h2>Numbers</h2>
+          <p>
+            Numbers are used to define opacity, line-height and even for color
+            channel values in rgb. Numbers are unitless integers (1, 2, 3, 100)
+            and decimals (.1, .2, .3).
+          </p>
+          <p>
+            If your size is 24px, rather than a specific size. The line height
+            is currently 1.5, which calculates as 36px
+          </p>
+          <p>The number also use in the follow sities:</p>
+          <ul>
+            <li>Fiters: filter:sepia(0.5); apply 50% to element</li>
+            <li>Opacity: opacity:0.5; applay a opcity of 50%</li>
+            <li>
+              Color channels: rgb(50, 50, 50); where the values 0-255 are
+              acceted to apply color value
+            </li>
+            <li>
+              Transform an element: transform: scale(1.2); scales the element by
+              120% of its initial size.
+            </li>
+          </ul>
+        </article>
+        <article class="percentages">
+          <h2>Percentages</h2>
+          <p>
+            when using a percentage you need to know, how is calculate this.
+            width is calculate of the available width the parent.
+          </p>
+          <div>
+            <p>
+              The transform is calculated from the elements width, which is 50%
+              of the container’s width.
+            </p>
+          </div>
+        </article>
+        <article class="percentages">
+          <h2>Dimensiones y longitudes</h2>
+          <h3>Largos absolutos</h3>
+          <img src="images/image1.png" alt="largos absolutos" />
+          <h3>Longitud relativa</h3>
+          <img src="images/image2.png" alt="largos absolutos" />
+          <h3>Unidades relativas al viewport</h3>
+          <img src="images/image3.png" alt="largos absolutos" />
+          <h3>Unidades alternativas relativas al viewport</h3>
+          <img src="images/image4.png" alt="largos absolutos" />
+          <h3>Unidades relativas al contenedor</h3>
+          <img src="images/image5.png" alt="largos absolutos" />
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+body {
+  width: 500px;
+  margin-right: 0;
+  margin-left: 0;
+  margin: auto;
+}
+
+body > div {
+  background-color: gainsboro;
+  display: flex;
+}
+
+#box-1 {
+  background-color: dodgerblue;
+  height: 200px;
+  width: 200px;
+}
+
+#box-2 {
+  background-color: orangered;
+  height: 200px;
+  width: 200px;
+}
+
+#box-container {
+  height: 500px;
+}
+
+.flex-direction-columns {
+  flex-direction: column;
+}
+
+.flex-direction-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-direction-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.flex-end-column {
+  height: 500px;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.flex-end-aling-items {
+  align-items: flex-end;
+}
+
+.flex-end-column-alig-items {
+  height: 500px;
+  flex-direction: column;
+  align-items: flex-end;
+}
