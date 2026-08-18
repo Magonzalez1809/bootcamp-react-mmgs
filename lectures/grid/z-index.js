@@ -1,6 +1,10 @@
-const switcher = document.getElementById("switcher");
-const root = document.documentElement;
+let root = document.documentElement;
 
-switcher.addEventListener("change", function (evt) {
-  root.style.setProperty("--var-repeat", evt.target.value);
+let zIndex = document.getElementById("z-index");
+zIndex.addEventListener("click", function (evt) {
+  if (zIndex.checked) {
+    root.style.setProperty("--var-z-index", 2);
+  } else {
+    root.style.setProperty("--var-z-index", 0);
+  }
 });

@@ -3,43 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="auto-fit.css" />
-    <script src="auto-fit.js" defer></script>
+    <link rel="stylesheet" href="z-index.css" />
+    <script src="z-index.js" defer></script>
     <title>Document</title>
   </head>
   <body>
     <main>
       <div class="wrapper">
         <article class="flow">
-          <h1><code>auto-fill</code> vs <code>auto-fit</code></h1>
+          <h1>Grid stacking and <code>z-index</code></h1>
           <figure class="callout">
             <p>
-              In this example there will be as many tracks as will fit into the
-              container with a minimum size of 100px.
-            </p>
-            <p>
-              <code
-                >grid-template-columns: repeat(auto-fill, minmax(100px,
-                1fr));</code
-              >
-            </p>
-            <p>
-              Change between auto-fill and auto-fit keywords to see the
-              difference when our first row is not filled with items.
+              Toggle item one’s <code>z-index</code> to see how it affects
+              stacking.
             </p>
           </figure>
           <div class="controls">
-            <label>
-              Choose column size
-              <select id="switcher">
-                <option value="auto-fill">auto-fill</option>
-                <option value="auto-fit">auto-fit</option>
-              </select>
+            <label class="toggle" for="z-index">
+              <span class="toggle__label"
+                >Switch “item one” to have a <code>z-index</code> of 2</span
+              >
+              <input
+                type="checkbox"
+                role="switch"
+                class="toggle__element"
+                id="z-index"
+              />
+              <div class="toggle__decor" aria-hidden="true">
+                <div class="toggle__thumb"></div>
+              </div>
             </label>
           </div>
           <div class="container" id="container">
-            <div class="box">Item one</div>
+            <div class="box bg-primary color-light">Item one</div>
             <div class="box">Item two</div>
+            <div class="box">Item three has more text</div>
+            <div class="box">Item four</div>
+            <div class="box">Item five</div>
           </div>
         </article>
       </div>
