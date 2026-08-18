@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="intrinsic-size.css" />
+    <script src="intrinsic-size.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <article class="flow">
+          <h1>Intrinsic grid sizing</h1>
+          <figure class="callout">
+            <p>
+              Use the dropdown to change the column sizes between the different
+              intrinsic sizing keywords.
+            </p>
+          </figure>
+          <div class="controls">
+            <label>
+              Choose column size
+              <select id="switcher">
+                <option value="auto">auto</option>
+                <option value="min-content">min-content</option>
+                <option value="max-content">max-content</option>
+                <option value="fit-content(7em)">fit-content(7em)</option>
+              </select>
+            </label>
+          </div>
+          <div class="container" id="container">
+            <div class="box">Item one</div>
+            <div class="box">Item two</div>
+            <div class="box">Item three has more text</div>
+            <div class="box">Item four</div>
+            <div class="box">Item five</div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <script src="intrinsic-size.js"></script>
+  </body>
+</html>

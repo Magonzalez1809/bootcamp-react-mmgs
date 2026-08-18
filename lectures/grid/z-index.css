@@ -1,0 +1,18 @@
+:root {
+  --var-repeat: auto-fill;
+  --color-stroke: #80868b;
+}
+
+.box {
+  background-color: aliceblue;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(var(--var-repeat), minmax(100px, 1fr));
+  grid-template-rows: 200px auto;
+  gap: 10px;
+  background-color: var(--color-stroke);
+  padding: 1em;
+  max-width: 70rem;
+}

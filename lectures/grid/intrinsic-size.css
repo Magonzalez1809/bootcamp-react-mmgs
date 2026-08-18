@@ -1,0 +1,18 @@
+:root {
+  --var-col: auto;
+  --color-stroke: #80868b;
+}
+
+.box {
+  background-color: aliceblue;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, var(--var-col));
+  grid-template-rows: 200px auto;
+  gap: 10px;
+  background-color: var(--color-stroke);
+  padding: 1em;
+  max-width: 30rem;
+}
