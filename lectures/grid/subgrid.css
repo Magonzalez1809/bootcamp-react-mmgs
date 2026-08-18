@@ -1,0 +1,30 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 10em);
+  /* grid rows size determined by the content */
+}
+
+.gallery-item {
+  display: grid;
+  grid-row: auto / span 2;
+  grid-template-rows: subgrid;
+}
+
+img {
+  align-self: end;
+}
+
+/* Presentation Styles only */
+
+.gallery {
+  gap: 1em 3em;
+}
+
+.gallery-item {
+  margin: 0;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}

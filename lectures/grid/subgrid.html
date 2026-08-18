@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="subgrid.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <article class="flow">
+          <h1>Subgrid</h1>
+          <figure class="callout">
+            <p>
+              In this example <code>grid-template-rows: subgrid;</code> is
+              applied to the gallery items to align the captions.
+            </p>
+          </figure>
+
+          <div class="gallery">
+            <figure class="gallery-item">
+              <img
+                src="https://assets.codepen.io/150150/level-1.svg"
+                alt="cabinet with 1 shelf"
+              />
+              <figcaption>The parent grid sets the row sizing</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="https://assets.codepen.io/150150/level-2.svg"
+                alt="cabinet with 2 shelves"
+              />
+              <figcaption>Each <code>.gallery-item</code> is a grid</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="https://assets.codepen.io/150150/level-3.svg"
+                alt="cabinet with 3 shelves"
+              />
+              <figcaption>
+                <code>.gallery-item</code> spans 2 of the parent rows
+              </figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="https://assets.codepen.io/150150/level-4.svg"
+                alt="cabinet with 4 shelves"
+              />
+              <figcaption>
+                subgrid is applied to <code>.gallery-item</code>
+              </figcaption>
+            </figure>
+          </div>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>
