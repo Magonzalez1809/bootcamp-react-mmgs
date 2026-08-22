@@ -1,0 +1,17 @@
+h2 {
+  width: 80vw;
+}
+
+p {
+  width: 75vmin;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.retina {
+  height: 100px;
+  width: 100px;
+}
