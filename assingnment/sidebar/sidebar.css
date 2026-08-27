@@ -14,7 +14,7 @@ body {
   gap: 20px;
   flex-direction: column;
   width: 80px;
-  height: 98vh;
+  height: 100vh;
   border-radius: 10px;
   position: fixed;
   box-shadow: 0 0 2px 2px #d4d4d4;
@@ -26,6 +26,34 @@ body {
 h2 {
   font-size: 18px;
 }
+
+li {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  padding: 5px;
+}
+
+h3 {
+  display: none;
+  color: gray;
+  font-size: 15px;
+}
+
+hr {
+  width: 80px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.secundary-information {
+  color: gray;
+  font-size: 13px;
+}
+
+/*Menu styles*/
 
 .menu {
   margin-top: 20px;
@@ -44,11 +72,8 @@ h2 {
   object-fit: cover;
 }
 
-.icon-item-menu {
-  width: 10px;
-}
-
 .option-menu {
+  display: none;
   padding: 10px;
   width: 300px;
   background-color: white;
@@ -59,16 +84,47 @@ h2 {
   top: -20px;
 }
 
+img[alt="icon item menu"] {
+  color: gray;
+  padding: 0;
+  margin: 0;
+  width: 10px;
+  height: 20px;
+}
+
+img[alt="fhoto group figma"] {
+  border: 1px solid #d4d4d4;
+}
+
 .option-menu li {
+  gap: 10px;
   padding: 10px;
   margin: 0;
 }
 
 .data-option-menu {
-  width: 70%;
-  margin: auto;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-top: auto;
 }
+
+/*hover*/
+
+.menu:hover .option-menu {
+  display: inline;
+}
+
+.option-menu li:hover {
+  background-color: #f3f1ff;
+  border-radius: 5px;
+}
+
+.option-menu li:hover:active:after {
+  content: " ✓ ";
+}
+
+/* Search*/
 
 .content-search {
   display: flex;
@@ -82,20 +138,6 @@ h2 {
   bottom: 3px;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  margin: 0;
-  list-style: none;
-  display: flex;
-  gap: 2px;
-  align-items: center;
-  padding: 5px;
-}
-
 li img,
 .content-search img {
   width: 20px;
@@ -103,10 +145,14 @@ li img,
   margin: 0 auto;
 }
 
-h3 {
-  color: gray;
-  font-size: 15px;
+/*hover*/
+
+.search:hover {
+  border-radius: 5px;
+  background-color: #f6f6f6;
 }
+
+/* Sections (shared, projects, help and settings) */
 
 ul,
 section {
@@ -114,6 +160,10 @@ section {
   flex-direction: column;
   margin: 0 auto;
   padding: 0;
+}
+
+.project-content {
+  height: 70%;
 }
 
 .project li div {
@@ -140,38 +190,9 @@ section {
 .new {
   color: gray;
   border: 1px solid gray;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  padding: 0;
-  margin-bottom: 20px;
-}
-
-.new {
   text-align: center;
 }
 
-h3 {
-  display: none;
-}
-
-.help-and-settings {
-  margin-top: auto;
-  margin-bottom: 0;
-}
-
-.conten-shared {
-  margin: 30px auto;
-}
-
-hr {
-  width: 80px;
-  margin: 0;
-  margin-bottom: 20px;
-}
 /*positionig */
 
 .content-option {
@@ -209,7 +230,81 @@ hr {
   border-radius: 5px;
 }
 
-.search:hover {
+.help-and-settings {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.conten-shared {
+  margin: 30px auto;
+}
+
+/*footer*/
+
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.content-footer-options {
+  display: none;
+  width: 200px;
+  padding: 10px;
+  margin: 0;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+  left: 85px;
+  bottom: 0px;
+}
+
+.content-footer-options hr {
+  width: 100%;
+}
+
+.container-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.option-boottom {
+  padding: 10px;
+}
+
+.perfil-options {
+  display: flex;
+  gap: 10px;
+}
+
+.option-boottom img {
+  width: 20px;
+  height: 20px;
+  margin-left: 1px;
+  margin-right: auto;
+}
+
+.option-boottom p {
+  width: 80%;
+}
+
+.container-version {
+  height: 20px;
+}
+
+/* hover */
+
+.footer:hover .content-footer-options {
+  display: flex;
+}
+
+.option-boottom:hover {
+  background-color: #edf9f2;
   border-radius: 5px;
-  background-color: #f6f6f6;
+  color: green;
 }
