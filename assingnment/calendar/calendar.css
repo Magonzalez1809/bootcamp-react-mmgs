@@ -1,0 +1,181 @@
+body {
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+}
+
+.board {
+  margin: 0 auto;
+  width: 790px;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.calendar-day,
+.title {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.title div {
+  padding: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.title div p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: #989aa3;
+}
+
+.title div h2 + p {
+  font-size: 10px;
+}
+
+.calendar-day div {
+  margin: 0;
+  border: 1px solid #d7d7d8;
+  height: 120px;
+}
+
+/*target meet*/
+
+.calendar-day .content-meet {
+  position: relative;
+  z-index: 1;
+}
+
+.calendar-day .content-meet .card-meet {
+  padding: 8px;
+  z-index: 2;
+  position: absolute;
+  text-align: left;
+  border-radius: 10px;
+  background-color: #f6f8fa;
+  grid-template-rows: repeat(4, 1fr);
+  top: 2px;
+  left: 2px;
+  width: 75px;
+  height: 98px;
+}
+
+.card-meet .image-perfil {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: none;
+  height: 20%;
+}
+
+.meet-check .image-perfil::after {
+  justify-self: end;
+  content: " ✓ ";
+}
+
+.meet-pending .image-perfil::after {
+  justify-self: end;
+  content: " ... ";
+}
+
+.card-meet .hour {
+  font-size: 12px;
+  padding: 0 3px;
+  margin-bottom: 5px;
+  color: gray;
+}
+
+.card-meet .data-meet {
+  display: grid;
+  padding: 3px;
+  font-size: 12px;
+}
+
+img[alt="foto perfil"] {
+  justify-self: start;
+  width: 25px;
+  height: 25px;
+  border-radius: 13px;
+  object-fit: cover;
+}
+
+/*blue card*/
+
+.calendar-day .content-meet .blue-card {
+  background-color: #e4eef8;
+}
+
+.blue-card .hour {
+  color: #223a52;
+}
+
+.blue-card .data-meet {
+  color: #478cd1;
+}
+
+/*green card*/
+
+.calendar-day .content-meet .green-card {
+  background-color: #ecf5f4;
+}
+
+.green-card .hour {
+  color: #223c39;
+}
+
+.green-card .data-meet {
+  color: #50cabd;
+}
+
+/*orange card*/
+
+.calendar-day .content-meet .orange-card {
+  background-color: #fcf0e4;
+}
+
+.orange-card .hour {
+  color: #7b4510;
+}
+
+.orange-card .data-meet {
+  color: #ec8d2f;
+}
+
+/*pink card*/
+
+.calendar-day .content-meet .pink-card {
+  background-color: #fceeec;
+}
+
+.pink-card .hour {
+  color: #8a4e45;
+}
+
+.pink-card .data-meet {
+  color: #c1321d;
+}
+
+/*green2 card*/
+
+.calendar-day .content-meet .green2-card {
+  background-color: #ecf5e7;
+}
+
+.green2-card .hour {
+  color: #3e4f34;
+}
+
+.green2-card .data-meet {
+  color: #6ec53e;
+}
+
+/*Hover */
+
+.card-meet:hover {
+  transform: translate(-6px, -6px);
+  box-shadow: 6px 12px 20px rgba(0, 0, 0, 0.08);
+}
