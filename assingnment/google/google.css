@@ -106,7 +106,7 @@ header > div input {
 header button {
   color: #3c4043;
   width: 150px;
-  height: 30px;
+  height: 35px;
   margin: 10px auto;
   border-radius: 5px;
   border: none;
@@ -134,4 +134,57 @@ footer > div {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 12px;
+  }
+
+  ul {
+    gap: 10px;
+  }
+
+  header > div img[alt="google logo"] {
+    width: 250px;
+    height: auto;
+  }
+
+  .search-container + div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header .google-search {
+    margin-top: 15%;
+  }
+
+  header > div input {
+    width: 30vw;
+    max-width: 300px;
+  }
+
+  footer p,
+  footer ul {
+    padding: 12px 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  nav {
+    padding: 12px;
+  }
+
+  .modo-ia {
+    background-color: white;
+  }
+
+  .modo-ia p {
+    display: none;
+  }
+
+  footer p,
+  footer ul {
+    padding: 12px 15px;
+  }
 }
