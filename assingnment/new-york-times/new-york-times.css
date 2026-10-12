@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-corner{
+    width: 200px;
+}
+
+.nav-icon{
+    width: 15px;
+    height: 15px;
+}
+
+.nav-links{
+    text-align: right;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    list-style: none;
+}
