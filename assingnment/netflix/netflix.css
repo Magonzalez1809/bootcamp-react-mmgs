@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #304550, #2b404c);
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+
+main {
+  color: white;
+  padding: 20px;
+  background-image: url(images/dune.webp);
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+nav,
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav img[alt="netflix logo"] {
+  padding: 0;
+  width: 50px;
+  height: 50px;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.actions {
+  gap: 15px;
+}
+
+.actions a {
+  color: white;
+  text-decoration: none;
+  margin: 0 2px;
+}
+
+.actions a:nth-child(2)::before {
+  content: "/ ";
+}
+
+h1 {
+  font-size: 70px;
+}
+
+.dune-information {
+  font-size: 12px;
+}
+
+.dune-information + p {
+  font-size: 12px;
+  width: 65ch;
+  margin: 24px 0;
+}
+
+.dune-information span:nth-child(2),
+span:nth-child(3) {
+  text-align: center;
+  text-justify: center;
+}
+
+span {
+  font-size: 14px;
+}
+
+.button-dune {
+  font-size: 12px;
+  width: 150px;
+  height: 45px;
+  color: white;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+}
+
+.button-dune:nth-child(1) {
+  background-color: blue;
+}
+
+.button-dune:nth-child(2) {
+  background-color: rgb(0 0 0 / 0.2);
+}
+
+h2 {
+  font-weight: 300;
+}
+
+.posters {
+  margin-top: 20px;
+}
+
+.posters img {
+  object-fit: cover;
+  width: 160px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.actors {
+  margin-top: 20px;
+  justify-content: flex-start;
+}
+
+.actors img,
+.actors li div {
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.actors li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+  width: 58px;
+}
+
+.actors li p {
+  margin: 5px auto;
+  text-align: center;
+}
+
+.actors li div {
+  padding-top: 8px;
+  text-align: center;
+  font-size: 10px;
+  background-color: rgb(0 0 0 / 0.2);
+}
+
+section {
+  margin-top: 500px;
+}
