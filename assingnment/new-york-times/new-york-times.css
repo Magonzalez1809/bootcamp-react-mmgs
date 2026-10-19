@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.blackletter {
+  text-decoration: none;
+  color: black;
+  font-family: "UnifrakturMaguntia", cursive;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+body {
+  background-color: #f6f6f6;
+  width: 1480px;
+  margin: 0 auto;
+  padding: 0 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+header,
+.nav-options {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.seccion {
+  color: black;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.seccion:nth-last-child(1) {
+  border: 1px solid #aaaaaa;
+  box-shadow: #aaaaaa;
+}
+
+.nav-options li:nth-child(1) p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-options {
+  padding: 0;
+  border-top: 1px solid black;
+}
+
+.nav-options li:nth-last-child(1) {
+  padding: 20px;
+  background-color: black;
+}
+
+.nav-corner {
+  width: 200px;
+}
+
+.nav-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.nav-links {
+  text-align: right;
+}
+
+ul,
+article {
+  display: flex;
+  gap: 20px;
+}
+
+article {
+  border-bottom: 1px solid #aaaaaa;
+  padding-bottom: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+section:not(section:nth-last-child(1)) {
+  padding-right: 20px;
+  border-right: 1px solid #aaaaaa;
+}
+
+.section-one img {
+  margin-top: 24px;
+  width: 220px;
+}
+
+.section-one h1 {
+  width: 30ch;
+}
+
+.section-one h1 + p {
+  width: 45ch;
+}
+
+.section-two h2 {
+  width: 40ch;
+}
+
+.section-two,
+.section-three {
+  margin-left: 10px;
+}
+
+.option-section {
+  font-weight: 700;
+  margin: 30px 0;
+  font-size: 12px;
+}
+
+span {
+  color: white;
+  padding: 10px;
+  background-color: black;
+  margin: 15px 0;
+  margin-right: 10px;
+}
+
+h1,
+h2,
+p {
+  margin: 10px 0;
+}
+
+.continue-reading {
+  font-weight: 600;
+  padding: 5px 0;
+  width: 16ch;
+  color: #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.news {
+  margin-top: 20px;
+  display: flex;
+}
+
+.news p,
+.news h4 {
+  width: 30ch;
+}
+
+.section-three img {
+  margin-left: 20px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
