@@ -156,3 +156,64 @@ p {
   height: 100px;
   object-fit: cover;
 }
+
+footer nav,
+footer div {
+  align-items: center;
+  display: flex;
+}
+
+footer nav {
+  justify-content: space-between;
+}
+
+footer div {
+  gap: 20px;
+}
+
+footer nav div p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: 500;
+}
+
+footer nav div + a {
+  font-weight: bold;
+}
+
+footer .card {
+  color: white;
+  gap: 0;
+  display: flex;
+  padding: 5px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 220px;
+}
+
+footer .card p {
+  margin: 3px;
+}
+
+.card-red {
+  background-color: #ca4a5c;
+}
+
+/*.card-red p:nth-child(2) {
+  color: #ca4a5c;
+}*/
+
+.card-green {
+  background-color: #5b8c5a;
+}
+
+.card-black {
+  background-color: black;
+}
