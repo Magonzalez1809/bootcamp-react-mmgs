@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --primary-color: rgb(176, 220, 233);
+}
+.container-app {
+  font-family: "Overpass", serif;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 50px 50px 70px 70px;
+  background-color: black;
+  max-width: 425px;
+  max-height: 780px;
+}
+
+main {
+  background: linear-gradient(#15c0f6, #1694f5, #1489f5);
+  border-radius: 50px;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  border-bottom: 1px #67d3f4 solid;
+  box-shadow:
+    0 30px 0 -20px #1450c8,
+    /*-10 is the value for the shadow offset */ 0 14px 24px
+      rgba(31, 111, 255, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.principalnav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: normal;
+  padding: 10px;
+}
+
+.updatingButton {
+  font-size: small;
+  border: 1px solid var(--primary-color);
+  border-radius: 25px;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: var(--primary-color);
+}
+
+.principalnav + a::before {
+  content: "•";
+  margin-right: 5px;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.weather-info img {
+  margin-top: -10px;
+  width: 250px;
+  height: 210px;
+}
+
+.container-temperature {
+  margin-top: -30px;
+  padding: 0;
+  position: relative;
+}
+
+.temperature {
+  height: 150px;
+  font-size: 150px;
+  color: white;
+  font-weight: bold;
+}
+
+.temperature::after {
+  content: "°";
+  font-size: 30px;
+  vertical-align: super;
+  font-weight: normal;
+  position: absolute;
+  color: var(--primary-color);
+  top: 25px;
+  right: 3px;
+}
+
+.weather-forecast-name {
+  margin-top: -7px;
+  font-size: 25px;
+  color: white;
+}
+.weather-day,
+.forecast .forecast-name {
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
+.forecast {
+  margin-top: 9px;
+  border-top: 1px solid rgb(176, 220, 233, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  padding: 10px;
+}
+
+.forecast .forecast-data {
+  font-size: 14px;
+  color: white;
+}
+
+.forecast div {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.forecast div img {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 5px;
+}
+
+section {
+  padding: 10px 20px;
+  color: white;
+}
+
+.forecast-menu {
+  padding: 10px 20px;
+  display: flex;
+}
+
+.forecast-menu:nth-child(1) {
+  padding: 12px 30px;
+  justify-content: space-between;
+}
+
+.forecast-menu:nth-child(1) a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #7d8187;
+}
+
+.forecast-menu:nth-child(1) p:nth-child(1) {
+  font-size: 20px;
+}
+
+.forecast-menu:nth-child(2) {
+  justify-content: space-around;
+}
+
+.container-cards {
+  margin-top: -10px;
+}
+
+.forecast-card {
+  height: 90px;
+  width: 70px;
+  border: 1px solid #7d8187;
+  padding: 5px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.forecast-card:hover {
+  margin: -5px 0 5px 0;
+  border: 1px solid #15c0f6;
+  background: linear-gradient(#15c0f6, #1694f5, #1489f5);
+  color: white;
+}
+
+.forecast-card p:nth-child(1) {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.forecast-card p:nth-child(3) {
+  font-size: 12px;
+  color: #7d8187;
+}
+
+/* estiles weather detail */
+
+.weather-tomorrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.weather-tomorrow div p:nth-child(1) {
+  font-size: 25px;
+  color: var(--primary-color);
+}
+
+.weather-tomorrow div p:nth-child(2) {
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+}
+
+.weather-tomorrow div p:nth-child(2) span {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.weather-tomorrow div p:nth-child(3) {
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
+.forecast-day {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.forecast-day p:nth-child(1) {
+  width: 20px;
+  color: gray;
+  font-weight: bold;
+}
+
+.forecast-day figure {
+  width: 80px;
+  display: flex;
+  color: gray;
+  font-weight: bold;
+  align-items: center;
+}
+
+.forecast-day p:nth-child(3) {
+  width: 80px;
+}
+
+.forecast-day p:nth-child(3) span {
+  color: gray;
+  font-weight: bold;
+}
